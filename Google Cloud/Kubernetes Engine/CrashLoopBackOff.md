@@ -15,7 +15,7 @@ CrashLoopBackOff is a Kubernetes state representing a restart loop that's happen
 
 ## BackOff
 
-The BackOff part is an exponential delay between restarts (Between a few seconds and five minutes)
+The BackOff part is an exponential delay between restarts (The delay goes up after every retry and can go up to five minutes)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
