@@ -71,6 +71,16 @@ iostat
 
 ## Ensure Service Account Has Pull Permissions
 
+Check the role of the service account
+```Bash
+kubectl get role my-role -n default
+```
+
+Check the role binding of the service account
+```Bash
+kubectl get rolebinding my-rolebinding -n default
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # References
