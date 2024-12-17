@@ -3,7 +3,7 @@
 ImagePullBackOff means that the Pod cannot start because the container image cannot be pulled from the registry after retrying several times
 
 * The delay goes up after every retry and can go up to five minutes
-* The error first starts off as `ErrImagePull` but then switches to `ImagePullBackOff` when the Pod tried again to pull the image and fails
+* The error first starts off as `ErrImagePull` but then switches to `ImagePullBackOff` when the Pod fails to pull the image once again
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
