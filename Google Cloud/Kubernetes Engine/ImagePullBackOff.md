@@ -2,6 +2,9 @@
 
 ImagePullBackOff means that the Pod cannot start because the container image cannot be pulled from the registry after retrying several times
 
+* The delay goes up after every retry and can go up to five minutes
+* The error first starts off as `ErrImagePull` but then switches to `ImagePullBackOff` when the Pod tried again to pull the image and fails
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Common ImagePullBackOff Causes
@@ -51,6 +54,8 @@ docker pull
 
 ## Trace the Registry Logs for Errors
 
+## Hitting Registry Rate Limits
+
 ## Check Available Storage Capacity
 
 Check the available storage capacity on a Node
@@ -86,3 +91,4 @@ kubectl get rolebinding my-rolebinding -n default
 # References
 
 * [KodeKloud](https://kodekloud.com/blog/fix-imagepullbackoff-errlimagepull-in-kubernetes/)
+* [PerfectScale](https://www.perfectscale.io/blog/imagepullbackoff)
