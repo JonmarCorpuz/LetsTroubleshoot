@@ -49,16 +49,16 @@ NAME                     READY     STATUS             RESTARTS   AGE
 
 ## Application Related CrashLoopBackOff Causes
 
-[] Misconfigurations (*Typos*, *etc.*)
-[] A resource is not available (*PersistentVolume not mounted*, *etc.*)
-[] Wrong command line arguments (*Missing arguments*, *Incorrect arguments*, *etc.*)
-[] A lack of permissions (*Read-only filesystem*, *etc.*)
+- [ ] Misconfigurations (*Typos*, *etc.*)
+- [ ] A resource is not available (*PersistentVolume not mounted*, *etc.*)
+- [ ] Wrong command line arguments (*Missing arguments*, *Incorrect arguments*, *etc.*)
+- [ ] A lack of permissions (*Read-only filesystem*, *etc.*)
 
 ## Network Related CrashLoopBackOff Causes
 
-[] You tried to bind an existing port
-[] Memory limits are too low (the container is Out Of Memory killed)
-[] Liveness probes aren't reporting the Pod as ready
+- [ ] You tried to bind an existing port
+- [ ] Memory limits are too low (the container is Out Of Memory killed)
+- [ ] Liveness probes aren't reporting the Pod as ready
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
