@@ -40,7 +40,7 @@ NAME                     READY     STATUS             RESTARTS   AGE
 ```
 
 ```Bash
-"Back-off restarting failed container"
+"Back-off restarting failed container <CONTAINER_ID> in pod <POD_ID>"
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
