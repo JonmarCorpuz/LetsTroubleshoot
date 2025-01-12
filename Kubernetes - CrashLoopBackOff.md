@@ -45,7 +45,7 @@ NAME                     READY     STATUS             RESTARTS   AGE
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Common CrashLoopBackOff Causes
+# Root Causes
 
 ## Application Related CrashLoopBackOff Causes
 
@@ -62,28 +62,30 @@ NAME                     READY     STATUS             RESTARTS   AGE
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Debugging CrashLoopBackOff
+# Troubleshooting Methods
 
-## Check Pod Description
-
+Check Pod Description
 ```Bash
 kubectl describe pod <POD_ID>
 ```
 
-## Check Pod Logs
+---
 
+Check Pod Logs
 ```Bash
 kubectl logs <POD_ID> --all-containers
 ```
 
-## Check Container Logs
+---
 
+Check Container Logs
 ```Bash
 kubectl logs <POD_ID> -c <CONTAINER_ID>
 ```
 
-## Check Pod Events
+---
 
+Check Pod Events
 ```Bash
 kubectl get events
 ```
@@ -92,8 +94,9 @@ kubectl get events
 kubectl get events --field-selector involvedObject.name=<POD_ID>
 ```
 
-## Check Deployment
+---
 
+Check Deployment
 ```Bash
 kubectl describe deployment <DEPLOYMENT_NAME>
 ```
