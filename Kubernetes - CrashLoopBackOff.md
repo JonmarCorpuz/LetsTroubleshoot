@@ -100,3 +100,11 @@ Check Deployment
 ```Bash
 kubectl describe deployment <DEPLOYMENT_NAME>
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Workarounds
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Solutions
