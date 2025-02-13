@@ -1,3 +1,28 @@
+# Troubleshooting Kubernetes Overview
+
+Troubleshootin Pods
+| Description | Command |
+| --- | --- |
+| Check Pod description | `kubectl describe pod POD_ID` |
+| Check Pod logs | `kubectl logs POD_ID --all-containers` |
+| Check Pod events | `kubectl get events [--field-selector involvedObject.name-POD_ID]` |
+
+<br>
+
+Troubleshooting Containers
+| Description | Command |
+| --- | --- |
+| Check Container logs | `kubectl logs POD_ID -c CONTAINER_ID` |
+
+<br>
+
+Troubleshooting Deployments
+| Description | Command |
+| --- | --- |
+| Check Deployment | `kubectl describe deployment DEPLOYMENT_NAME` |
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
 # CrashLoopBackOff
 
 ## Issue Summary
@@ -28,25 +53,6 @@ NAME                     READY     STATUS             RESTARTS   AGE
 ```Text
 "Back-off restarting failed container <CONTAINER_ID> in pod <POD_ID>"
 ```
-
-## Troubleshooting Methods
-
-Pods
-| Description | Command |
-| --- | --- |
-| Check Pod description | `kubectl describe pod POD_ID` |
-| Check Pod logs | `kubectl logs POD_ID --all-containers` |
-| Check Pod events | `kubectl get events [--field-selector involvedObject.name-POD_ID]` |
-
-<br>
-
-Containers:
-- Check Container logs: `kubectl logs POD_ID -c CONTAINER_ID`
-
-<br>
-
-Deployments
-- Check Deployment: `kubectl describe deployment DEPLOYMENT_NAME`
 
 ## Root Causes
   
