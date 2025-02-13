@@ -31,10 +31,12 @@ NAME                     READY     STATUS             RESTARTS   AGE
 
 ## Troubleshooting Methods
 
-Pods:
-- Check Pod description: `kubectl describe pod POD_ID`
-- Check Pod logs `kubectl logs POD_ID --all-containers`
-- Check Pod events: `kubectl get events [--field-selector involvedObject.name-POD_ID]`
+Pods
+| Description | Command |
+| --- | --- |
+| Check Pod description | `kubectl describe pod POD_ID` |
+| Check Pod logs | `kubectl logs POD_ID --all-containers` |
+| Check Pod events | `kubectl get events [--field-selector involvedObject.name-POD_ID]` |
 
 <br>
 
