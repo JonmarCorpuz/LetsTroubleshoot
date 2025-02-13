@@ -14,25 +14,17 @@
 ```Text
 Container keeps crashing.
 ```
-<br>
-
 ```Text
 Can’t restart some containers in this Pod.
 ```
-<br>
-
 ```Text
 Kubernetes restarts the Pods with an exponential delay starting at 10 seconds, for a maximum of 5 minutes, until the Pods run successfully for 10 minutes. If a problem prevents the Pods from running, your services might experience prolonged downtime.
 ```
-<br>
-
 ```Bash
 $ kubectl get pods
 NAME                     READY     STATUS             RESTARTS   AGE
 <POD_ID>                 0/1       CrashLoopBackOff   1>          1m
 ```
-<br>
-
 ```Text
 "Back-off restarting failed container <CONTAINER_ID> in pod <POD_ID>"
 ```
