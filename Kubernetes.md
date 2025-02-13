@@ -28,5 +28,15 @@ NAME                     READY     STATUS             RESTARTS   AGE
 ```Text
 "Back-off restarting failed container <CONTAINER_ID> in pod <POD_ID>"
 ```
+
+## Root Causes
   
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# ImagePullBackOff
+
+## Issue Summary
+
+## Error Messages
+
+## Root Causes
