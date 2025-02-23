@@ -1,4 +1,4 @@
-# Failed to Construct REST Client Overview
+# Failed to Construct REST Client Error Overview
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
