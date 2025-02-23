@@ -6,6 +6,8 @@ A kernel panic is an event that occurs when the operating system's kernel detect
 
 # Kernel Panic Error Messages
 
+## Serial Logs
+
 Memory Corruption
 ```Bash
 Kernel panic - not syncing: Attempted to kill the idle task!
@@ -68,4 +70,8 @@ The `initramfs` (Initial RAM File System) is a temporary root file system loaded
 * The `initramfs` file doesn't get generated in the /boot directory during kernel installation
 * The `initramfs` file gets only partially generated or is corrupted
 
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
+# Common Symptoms
+
+* The kernel doesn't allow you to connect to the VM via SSH and the serial console
