@@ -62,11 +62,10 @@ Kernel panic - not syncing: Fatal Machine check
 
 ## initramfs Issues
 
-* The entry related to the `initramfs` file that corresponds to the kernel doesn't exist in the `grub.cfg` file
+The `initramfs` (Initial RAM File System) is a temporary root file system loaded into memory during the early stages of the boot process that allows the kernel to perform necessary operations before the actual root filesystem can be mounted (Ex: *Loading required drivers*, *Handling complex disk setups*, *etc.*)
+
+* The entry related to the `initramfs` file that corresponds to the kernel doesn't exist in the `grub.cfg` file (This is the main configuration file for the GRUB bootloader on Linux systems that contains information about the GRUB menu and a list of installed kernels
 * The `initramfs` file doesn't get generated in the /boot directory during kernel installation
 * The `initramfs` file gets only partially generated or is corrupted
 
----
 
-* The kernel is unable to load the `initramfs` modules properly, which are required for the guest OS to boot
-* The kernel doesn't know how to handle a certain request and protects itself by stopping
